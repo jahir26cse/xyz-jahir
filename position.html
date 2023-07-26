@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexBox</title>
+  <style>
+    .container {
+      display: flex;
+    }
+
+    .fb {
+      margin: 150px;
+    }
+
+    .phara-1 {
+      font-size: 20px;
+    }
+
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid lightgray;
+      box-shadow: 2px 5px 5px 5px #888888;
+      width: 320px;
+      height: 300px;
+      padding: 20px;
+      border-radius: 5px;
+      margin: 150px;
+    }
+
+    .login-form input {
+      margin-top: 20px;
+
+    }
+
+    .submit {
+      background-color: blue;
+      color: white;
+      font-size: 20px;
+    }
+
+    .image {
+      margin-left: -50px;
+    }
+
+    .password {
+      padding-top: 20px;
+      text-align: center;
+      border: 0px 0px 5px 0px;
+      text-decoration: none;
+    }
+
+    .or {
+      text-align: center;
+    }
+
+    .new-account {
+      padding: 10px;
+      border-radius: 5px;
+
+    }
+
+    @media screen and (min-width: 576px) and (max-width: 992px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="fb">
+      <img class="image" src="/download.png" alt="Facebook">
+      <p class="phara-1">Facebook helps you connect and share with the people in your life.</p>
+    </div>
+    <div class="login-form-container">
+      <form class="login-form">
+        <input type="email" name="" id="" placeholder="Your Password" required>
+        <input type="password" name="" id="" placeholder="Your Password" required>
+        <input class="submit" type="submit" value="Login">
+        <a class="password" href="#">Forgotten password?</a>
+        <p class="or">Or</p>
+        <input class="new-account" type="button" name="" id="" value="Create new account" </form>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
